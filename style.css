@@ -8,8 +8,12 @@
     src: url(src/fonts/ofont.ru_PF\ BeauSans\ Pro.ttf);
 }
 
+a {
+    text-decoration: none;
+}
+
 .icon {
-    width: 1000px;
+    width: 930px;
     margin: auto;
     margin-top: 300px;
 }
@@ -32,19 +36,22 @@ figcaption {
     display: inline-flex;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     font: 35px Beau;
 }
 
 h1 {
-    font: bold 45px Diamond Girl Skinny;
+    font: 45px Diamond Girl Skinny;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 10px;
 }
+
 ul {
-    font:  25px Beau;
+    font: 25px Beau;
     margin-left: 20%;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 body {
@@ -54,9 +61,100 @@ body {
     background-repeat: no-repeat
 }
 
-.contact {
-    min-width: 30%;
-    min-height: 250px;
-    margin-left: 20%;
+.line {
+    width: 200px;
+    margin: auto;
 }
 
+.social {
+    width: 375px;
+    margin: auto;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.fade:hover {
+    opacity: 0.3;
+}
+
+figcaption {
+    text-decoration: none;
+    display: inline-block;
+    color: #000000;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+figcaption:after {
+    display: block;
+    content: "";
+    background-color: #000000;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+figcaption:hover:after, figcaption:focus:after {
+    width: 100%;
+}
+
+a:visited {
+    color: black;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    -webkit-animation: fade-in 3s linear;
+    /* Safari 4+ */
+    -moz-animation: fade-in 3s linear;
+    /* Fx 5+ */
+    -o-animation: fade-in 3s linear;
+    /* Opera 12+ */
+    animation: fade-in 3s linear;
+    /* IE 10+, Fx 29+ */
+}
