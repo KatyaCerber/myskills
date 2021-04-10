@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Diamond Girl Skinny;
+    src: url(src/fonts/19689.otf);
+}
+
+@font-face {
+    font-family: Beau;
+    src: url(src/fonts/ofont.ru_PF\ BeauSans\ Pro.ttf);
+}
+
+.icon {
+    width: 1000px;
+    margin: auto;
+    margin-top: 300px;
+}
+
+figure {
+    float: left;
+    margin: 0 10px 10px 0;
+    text-align: center;
+}
+
+figure p {
+    margin-bottom: 0;
+}
+
+figcaption {
+    font: bold small-caps 25px Diamond Girl Skinny;
+}
+
+.aboutme {
+    display: inline-flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+    font: 35px Beau;
+}
+
+h1 {
+    font: bold 45px Diamond Girl Skinny;
+    text-align: center;
+    margin-top: 100px;
+}
+ul {
+    font:  25px Beau;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+body {
+    background: url(src/img/background1.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.contact {
+    min-width: 30%;
+    min-height: 250px;
+    margin-left: 20%;
+}
+
